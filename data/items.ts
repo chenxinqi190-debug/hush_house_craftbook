@@ -10,21 +10,13 @@ export interface Item {
 }
 
 export const items: Record<string, Item> = {
-  acrid_marrow: {
-    id: "acrid_marrow",
-    displayName: {
-      en: "Acrid Marrow", 
-      zh: "苦西葫芦",
-    },
-    icon: "acrid_marrow.png",
-  },
   agave_aeterna: {
     id: "agave_aeterna",
     displayName: {
       en: "Agave Aeterna", 
       zh: "永恒龙舌兰",
     },
-    icon: "agave_aeterna.png",
+    icon: "/icons/agave_aeterna.png",
   },
   aglaophotis: {
     id: "aglaophotis",
@@ -32,119 +24,47 @@ export const items: Record<string, Item> = {
       en: "Aglaophotis", 
       zh: "阿格劳福提斯花",
     },
-    icon: "aglaophotis.png",
+    icon: "/icons/aglaophotis.png",
   },
-  almonds: {
-    id: "almonds",
+  bitterblack_salts: {
+    id: "bitterblack_salts",
     displayName: {
-      en: "Almonds", 
-      zh: "杏仁",
+      en: "Bitterblack Salts", 
+      zh: "苦黑盐",
     },
-    icon: "almonds.png",
+    icon: "/icons/bitterblack_salts.png",
   },
-  amber_pumpkin: {
-    id: "amber_pumpkin",
-    displayName: {
-      en: "Amber Pumpkin",
-      zh: "珀色南瓜",
-    },
-    icon: "amber_pumpkin.png",
-  },
-  basket_apples: {
-    id: "basket_apples",
-    displayName: {
-      en: "Basket of Apples",
-      zh: "一篮苹果",
-    },
-    icon: "basket_apples.png",
-  },
-  basket_leeks: {
-    id: "basket_leeks",
-    displayName: {
-      en: "Basket of Leeks",
-      zh: "一篮韭葱",
-    },
-    icon: "basket_leeks.png",
-  },
-  basket_onions: {
-    id: "basket_onions",
-    displayName: {
-      en: "Basket of Onions",
-      zh: "一篮洋葱",
-    },
-    icon: "basket_onions.png",
-  },
-  basket_vegetables: {
-    id: "basket_vegetables",
-    displayName: {
-      en: "Basket of Vegetables",
-      zh: "一篮蔬菜",
-    },
-    icon: "basket_vegetables.png",
-  },
-  batter: {
-    id: "batter",
-    displayName: {
-      en: "Batter",
-      zh: "面糊",
-    },
-    icon: "batter.png",
-  },
-  beef: {
-    id: "beef",
-    displayName: {
-      en: "Beef",
-      zh: "牛肉",
-    },
-    icon: "beef.png",
-  },
-  blackberries: {
-    id: "blackberries",
-    displayName: {
-      en: "Blackberries",
-      zh: "黑莓",
-    },
-    icon: "blackberries.png",
-  },
-   blackberry_jam: {
-    id: "blackberry_jam",
-    displayName: {
-      en: "Blackberry Jam",
-      zh: "黑莓酱",
-    },
-    icon: "blackberry_jam.png",
-  },
-  blue_crown: {
+    blue_crown: {
     id: "blue_crown",
     displayName: {
       en: "Blue Crown",
       zh: "蓝冠花",
     },
-    icon: "blue_crown.png",
+    icon: "/icons/blue_crown.png",
   },
-  boiled_egg: {
-    id: "boiled_egg",
-    displayName: {
-      en: "Boiled Egg",
-      zh: "白煮蛋",
-    },
-    icon: "boiled_egg.png",
-  },
-  bottle_milk: {
-    id: "bottle_milk",
-    displayName: {
-      en: "Bottle of Milk",
-      zh: "奶",
-    },
-    icon: "bottle_milk.png",
-  },
-  bowl_of_sea_blest_pears: {
+    bowl_of_sea_blest_pears: {
     id: "bowl_of_sea_blest_pears",
     displayName: {
       en: "Bowl of Sea-Blest Pears",
       zh: "一碗海佑梨",
     },
-    icon: "bowl_of_sea_blest_pears.png",
+    icon: "/icons/bowl_of_sea_blest_pears.png",
+  },
+  flower: {
+    id: "flower",
+    displayName: {
+      en: "Flower", 
+      zh: "花",
+    },
+    icon: "/icons/flower.png",
+  },
+  liquid: {
+    id: "liquid",
+    displayName: {
+      en: "Liquid", 
+      zh: "液体",
+    },
+    icon: "/icons/liquid.png",
   },
   knife:{
     id: "knife",
@@ -154,13 +74,13 @@ export const items: Record<string, Item> = {
   },
     icon: "knife.png",
   },
-  bunch_of_grapes: {
-    id: "bunch_of_grapes",
+  iotic_essence: {
+    id: "iotic_essence",
     displayName: {
-      en: "Bunch of Grapes",
-      zh: "一串葡萄",
+      en: "Iotic Essence",
+      zh: "赤化精华",
     },
-    icon: "bunch_of_grapes.png",
+    icon: "/icons/iotic_essence.png",
   },
   butter: {
     id: "butter",

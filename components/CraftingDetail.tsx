@@ -2,6 +2,7 @@
 
 import { Craftable, TYPE_LABELS } from "@/types/crafting";
 import { items } from "@/data/items";
+import { skills } from "@/data/skills";
 import { Language, translations } from "@/data/i18n";
 
 interface CraftingDetailProps {
@@ -89,97 +90,110 @@ const romanNumerals = ["I", "II", "III", "IV", "V"];
       </section>
 
       {/* Methods */}
-      <section className="mt-12">
-        {craftable.methods.map((method, index) => (
-          <div
-            key={method.id}
-            className="mb-10 border-t border-ink/10 pt-6"
-          >
-            <h3 className="text-2xl uppercase tracking-[0.2em] text-ink/80">
-              {t.formula} {romanNumerals[index]}
-            </h3>
+<section className="mt-12">
+  {craftable.methods.map((method, index) => (
+    <div
+      key={method.id}
+      className="mb-10 border-t border-ink/10 pt-6"
+    >
+      <h3 className="text-2xl uppercase tracking-[0.2em] text-ink/80">
+        {t.formula} {romanNumerals[index]}
+      </h3>
 
-            {/* Required Principle */}
-            <div className="mt-5 flex items-center gap-2">
-              <img
-                src={`/icons/principles/principle.${method.principle.id}.png`}
-                alt={method.principle.id}
-                className="h-7 w-7 object-contain"
-              />
-              <span className="text-lg text-ink">
-                {method.principle.amount}
-              </span>
-            </div>
+      <div className="mt-5 grid gap-8 md:grid-cols-[140px_360px_160px]">
+        {/* Required Principle */}
+        <div>
+          <p className="text-lg uppercase tracking-[0.15em] text-ink/80">
+            {t.requiredPrinciple}
+          </p>
 
-            {/* Skills */}
-            {method.skills.length > 0 && (
-              <div className="mt-5">
-                <p className="text-sm uppercase tracking-[0.15em] text-ink/60">
-                  Skills
-                </p>
+          <div className="mt-3 flex items-center gap-2">
+            <img
+              src={`/icons/principles/principle.${method.principle.id}.png`}
+              alt={method.principle.id}
+              className="h-9 w-9 object-contain"
+            />
 
-                <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
-                  {method.skills.map((skill) => (
-                    <span key={skill} className="text-base text-ink">
-                      {skill.replaceAll("_", " ")}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Required materials */}
-            {method.requires.length > 0 && (
-              <div className="mt-5">
-                <p className="text-sm uppercase tracking-[0.15em] text-ink/60">
-                  {t.requires}
-                </p>
-
-                <div className="mt-3 flex flex-wrap gap-4">
-                  {method.requires.map((itemId) => {
-                    const item = items[itemId];
-
-                    return (
-                      <div
-                        key={itemId}
-                        className="flex w-28 flex-col items-center text-center"
-                      >
-                        {item && (
-                          <img
-                            src={`/icons/${item.id}.png`}
-                            alt={item.displayName[language]}
-                            className="max-h-16 max-w-16 object-contain"
-                          />
-                        )}
-
-                        <span className="mt-1 text-sm text-ink">
-                          {item
-                            ? item.displayName[language]
-                            : itemId.replaceAll("_", " ")}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
+            <span className="text-lg text-ink">
+              {method.principle.amount}
+            </span>
           </div>
-        ))}
-      </section>
+        </div>
 
-      {/* Note */}
-      {craftable.note && (
-        <section className="mt-6">
-          {craftable.note[language].map((line, index) => (
-            <p
-              key={index}
-              className="text-base italic leading-relaxed text-ink/60"
-            >
-              {line}
-            </p>
-          ))}
-        </section>
-      )}
+        {/* Skills */}
+        <div>
+          <p className="text-lg uppercase tracking-[0.15em] text-ink/80">
+            {t.skills}
+          </p>
+
+          <div className="mt-3 grid grid-cols-2 gap-4">
+            {method.skills.map((skillID) => {
+              const skill = skills[skillID];
+
+              return (
+                <div key={skill.id} className="w-24">
+                  <img
+                    src={skill.image}
+                    alt={skill.displayName[language]}
+                    className="h-20 w-20 object-contain"
+                  />
+
+                  <p className="mt-2 text-sm leading-snug text-ink">
+                    {skill.displayName[language]}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Required Materials */}
+        <div>
+          <p className="text-lg uppercase tracking-[0.15em] text-ink/80">
+            {t.requires}
+          </p>
+
+          <div className="mt-3 flex flex-wrap gap-4">
+            {method.requires.map((itemId) => {
+              const item = items[itemId];
+
+              return (
+                <div
+                  key={item.id}
+                  className="flex w-24 flex-col items-center text-center"
+                >
+                  <img
+                    src={item.icon}
+                    alt={item.displayName[language]}
+                    className="h-14 w-14 object-contain"
+                  />
+
+                  <span className="mt-2 text-sm text-ink">
+                    {item.displayName[language]}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</section>
+
+{/* Note */}
+{craftable.note && (
+  <section className="mt-6">
+    {craftable.note[language].map((line, index) => (
+      <p
+        key={index}
+        className="text-base italic leading-relaxed text-ink/60"
+      >
+        {line}
+      </p>
+    ))}
+  </section>
+)}
     </article>
   );
 }

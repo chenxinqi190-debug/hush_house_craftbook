@@ -4,11 +4,11 @@ export const craftables: Craftable[] = [
     id: "rubywise_ruin",
     displayName: {
       en: "Rubywise Ruin",
-      zh: "赤慧沉沦",
+      zh: "沉沦赤慧",
     },
     description: {
       en: "A ruddy liquor wrung from flowers - even when the flowers aren't red.",
-      zh: "xxx",
+      zh: "一种从鲜花中榨取的红色烈酒——即使作为原料的花不是红的。",
     },
     principles: [
       { id: "grail", amount: 4 },
@@ -27,9 +27,9 @@ export const craftables: Craftable[] = [
         },
         skills: [
           "applebright_euphonies",
-          "desires_and_dissolutions",
-          "leaves_and_thorns",
-          "orchids_and_narcotics",
+          "desires_n_dissolutions",
+          "leaves_n_thorns",
+          "orchids_n_narcotics",
         ],
         requires: ["flower"],
       },
@@ -44,12 +44,12 @@ export const craftables: Craftable[] = [
 
     displayName: {
       en: "Xanthotic Essence",
-      zh: "",
+      zh: "黄化精华",
     },
 
     description: {
       en: "The rich gold of a summer afternoon. 'If sunlight precedes moonlight,' St Anselm observed, 'the Meniscate must precede the Madrugad; and the light that was lost will remain.'",
-      zh: "",
+      zh: "夏日午后的浓金色。“如果日光先于月光，”圣安塞姆曾注意到，“则弧月必先于昕旦；而失落之光将留存。”",
     },
 
     principles: [
@@ -66,9 +66,9 @@ export const craftables: Craftable[] = [
         },
         skills: [
           "auroral_contemplations",
-          "purifications_and_exaltations",
+          "purifications_n_exaltations",
           "pyroglyphics",
-          "transformations_and_liberations",
+          "transformations_n_liberations",
         ],
         requires: ["liquid"],
       },
@@ -79,7 +79,7 @@ export const craftables: Craftable[] = [
           id: "sky",
           amount: 10,
         },
-        skills: ["anbary_and_lapidary"],
+        skills: ["anbary_n_lapidary"],
         requires: ["liquid"],
       },
 
@@ -89,7 +89,7 @@ export const craftables: Craftable[] = [
           id: "lantern",
           amount: 15,
         },
-        skills: ["purifications_and_exaltations"],
+        skills: ["purifications_n_exaltations"],
         requires: [
           "bitterblack_salts",
           "iotic_essence",
