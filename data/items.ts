@@ -58,6 +58,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/bowl_of_sea_blest_pears.png",
   },
+  cuckoo_honey: {
+    id: "cuckoo_honey",
+    displayName: {
+      en: "Cuckoo Honey",
+      zh: "杜鹃蜜",
+    },
+    icon:"/icons/cuckoo_honey.png"
+  },
   flower: {
     id: "flower",
     displayName: {
@@ -65,6 +73,62 @@ export const items: Record<string, Item> = {
       zh: "花",
     },
     icon: "/icons/flower.png",
+  },
+  fragrant_chalice: {
+    id: "fragrant_chalice",
+    displayName: {
+      en: "Fragrant Chalice",
+      zh: "香盏花",
+    },
+    icon: "/icons/fragrant_chalice.png",
+  },
+  honey: {
+    id: "honey",
+    displayName: {
+      en: "Honey",
+      zh: "蜂蜜",
+    },
+    icon: "/icons/honey.png",
+  },
+  honeyscar_jasmine: {
+    id: "honeyscar_jasmine",
+    displayName: {
+      en: "Honeyscar Jasmine",  
+    zh: "蜜痂茉莉",
+    },
+    icon: "/icons/honeyscar_jasmine.png",
+  },
+  ichor_vitreous: {
+    id: "ichor_vitreous",
+    displayName: {
+      en: "Ichor Vitreous",
+      zh: "玻璃灵液",
+    },
+    icon: "/icons/ichor_vitreous.png",
+  },
+  intoxicating: {
+    id: "intoxicating",
+    displayName: {
+      en: "Intoxicating",
+      zh: "烈酒",
+    },
+    icon: "/icons/intoxicating.png",
+  },
+  iotic_essence: {
+    id: "iotic_essence",
+    displayName: {
+      en: "Iotic Essence",
+      zh: "赤化精华",
+    },
+    icon: "/icons/iotic_essence.png",
+  },
+  lens: {
+    id: "lens",
+    displayName: {
+      en: "Lens",
+      zh: "透镜",
+    },
+    icon: "/icons/lens.png",
   },
   liquid: {
     id: "liquid",
@@ -82,54 +146,6 @@ export const items: Record<string, Item> = {
   },
     icon: "knife.png",
   },
-  ichor_vitreous: {
-    id: "ichor_vitreous",
-    displayName: {
-      en: "Ichor Vitreous",
-      zh: "玻璃灵液",
-    },
-    icon: "/icons/ichor_vitreous.png",
-  },
-  iotic_essence: {
-    id: "iotic_essence",
-    displayName: {
-      en: "Iotic Essence",
-      zh: "赤化精华",
-    },
-    icon: "/icons/iotic_essence.png",
-  },
-  cuckoo_honey: {
-    id: "cuckoo_honey",
-    displayName: {
-      en: "Cuckoo Honey",
-      zh: "杜鹃蜜",
-    },
-    icon:"cuckoo_honey.png"
-  },
-  fragrant_chalice: {
-    id: "fragrant_chalice",
-    displayName: {
-      en: "Fragrant Chalice",
-      zh: "香盏花",
-    },
-    icon: "fragrant_chalice.png",
-  },
-  honey: {
-    id: "honey",
-    displayName: {
-      en: "Honey",
-      zh: "蜂蜜",
-    },
-    icon: "honey.png",
-  },
-  honeyscar_jasmine: {
-    id: "honeyscar_jasmine",
-    displayName: {
-      en: "Honeyscar Jasmine",  
-    zh: "蜜痂茉莉",
-    },
-    icon: "honeyscar_jasmine.png",
-  },
   isle_water: {
     id: "isle_water",
     displayName: {
@@ -137,14 +153,6 @@ export const items: Record<string, Item> = {
       zh: "岛上井水",
     },
     icon: "isle_water.png",
-  },
-  intoxicating: {
-    id: "intoxicating",
-    displayName: {
-      en: "Intoxicating",
-      zh: "烈酒",
-    },
-    icon: "intoxicating.png",
   },
   mist_kissed_water: {
     id: "mist_kissed_water",
@@ -154,180 +162,12 @@ export const items: Record<string, Item> = {
     },
     icon: "mist_kissed_water.png",
   },
-  moly: {
-    id: "moly",
-    displayName: {
-      en: "Moly",
-      zh: "摩吕",
-    },
-    icon: "moly.png",
-  },
-  mushrooms: {
-    id: "mushrooms",
-    displayName: {
-      en: "Mushrooms",
-      zh: "蘑菇",
-    },
-    icon: "mushrooms.png",
-  },
-  pale_marrow: {
-    id: "pale_marrow",
-    displayName: {
-      en: "Pale Marrow", 
-      zh: "苍白西葫芦",
-    },
-    icon: "pale_marrow.png",
-  },
-  pear_pie: {
-    id: "pear_pie",
-    displayName: {
-      en: "Pear Pie", 
-      zh: "梨子派",
-    },
-    icon: "pear_pie.png",
-  },
-  pheasant: {
-    id: "pheasant",
-    displayName: {
-      en: "Pheasant",
-      zh: "野鸡",
-    },
-    icon: "pheasant.png",
-  },
-  pickled_mushrooms: {
-    id: "pickled_mushrooms",
-    displayName: {
-      en: "Pickled Mushrooms",
-      zh: "腌蘑菇",
-    },
-    icon: "pickled_mushrooms.png",
-  },
-  pickled_pilchards: {
-    id: "pickled_pilchards",
-    displayName: {
-      en: "Pickled Pilchards",
-      zh: "腌沙丁鱼",
-    },
-    icon: "pickled_pilchards.png",
-  },
-  pilchards: {
-    id: "pilchards",
-    displayName: {
-      en: "Pilchards",
-      zh: "沙丁鱼",
-    },
-    icon: "pilchards.png",
-  },
-  pillas_oat_bread: {
-    id: "pillas_oat_bread",
-    displayName: {
-      en: "Pillas Oat Bread",
-      zh: "小莜麦面包",
-    },
-    icon: "pillas_oat_bread.png",
-  },
-  plums: {
-    id: "plums",
-    displayName: {
-      en: "Plums",
-      zh: "西梅",
-    },
-    icon: "plums.png",
-    },
-    potatoes: {
-    id: "potatoes",
-    displayName: {
-      en: "Potatoes",
-      zh: "土豆",
-    },
-    icon: "potatoes.png",
-    },
-  pumpkin: {
-    id: "pumpkin",
-    displayName: {
-      en: "Pumpkin",
-      zh: "南瓜",
-    },
-    icon: "pumpkin.png",
-    },
   pyrus_auricalcinus: {
     id: "pyrus_auricalcinus",
     displayName: {
       en: "Pyrus Auricalcinus",
       zh: "铜梨",
     },
-    icon: "pyrus_auricalcinus.png",
+    icon: "/icons/pyrus_auricalcinus.png",
     },
-    roast_beef: {
-    id: "roast_beef",
-    displayName: {
-      en: "Roast Beef",
-      zh: "烤牛肉",
-    },
-    icon: "roast_beef.png",
-    },
-  rosehips: {
-    id: "rosehips",
-    displayName: {
-      en: "Rosehips",
-      zh: "玫瑰果",
-    },
-    icon: "rosehips.png",
-    },
-    rosehip_jam: {
-    id: "rosehip_jam",
-    displayName: {
-      en: "Rosehip Jam",
-      zh: "玫瑰果酱",
-    },
-    icon: "rosehip_jam.png",
-    },
-  sack_vegetables: {
-  id: "sack_vegetables",
-  displayName: {
-    en: "Sack of Vegetables",
-    zh: "一袋蔬菜"
-  },
-  icon: "sack_vegetables.png",
-},
-  sea_pie: {
-  id: "sea_pie",
-  displayName: {
-    en: "Sea Pie",
-    zh: "海味派"
-  },
-  icon: "sea_pie.png",
-},
-  spicing: {
-  id: "spicing",
-  displayName: {
-    en: "Spicing",
-    zh: "香料"
-  },
-  icon: "spicing.png",
-},
-  soft_amber_pumpkin: {
-  id: "soft_amber_pumpkin",
-  displayName: {
-    en: "Soft Amber Pumpkin",
-    zh: "柔嫩珀色南瓜"
-  },
-  icon: "soft_amber_pumpkin.png",
-},
-sugar: {
-  id: "sugar",
-  displayName: {
-    en: "Sugar",
-    zh: "糖"
-  },
-  icon: "sugar.png",
-},
-veiled_goddess_lapsang_souchong_pot: {
-    id: "veiled_goddess_lapsang_souchong_pot",
-    displayName: {
-      en: "Veiled Goddess Lapsang Souchong (Pot)",
-      zh: "面纱女神正山小种（一壶）",
-    },
-    icon: "veiled_goddess_lapsang_souchong_pot.png",
-  },
 }

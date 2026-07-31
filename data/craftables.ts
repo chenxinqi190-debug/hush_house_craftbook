@@ -120,6 +120,126 @@ export const craftables: Craftable[] = [
     icon: "ashartine.png",
   },
   {
+    id: "asimel",
+    displayName: {
+      en: "Asimel",
+      zh: "阿苏麦",
+    },
+    description: {
+      en: "A silver ink that can only be made and used in dreams. An Ink of Revelation.",
+      zh: "一种仅可于梦中制作与使用的银色墨水。一种启示之墨。",
+    },
+    principles: [
+      { id: "knock", amount: 3 },
+      { id: "moon", amount: 5 },
+      { id: "moth", amount: 1 },
+      { id: "rose", amount: 1 },
+    ],
+
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "moth",
+          amount: 10,
+        },
+        skills: ["inks_of_revelation"],
+        requires: ["liquid"],
+      },{
+        id: "method_2",
+        principle: {
+          id: "moon",
+          amount: 10,
+        },
+        skills: [
+          "pearl_n_tide",
+          "putrefactions_n_calcinations",
+          "sea_stories",
+        ],
+        requires: ["liquid"],
+      },
+      {
+        id: "method_3",
+        principle: {
+          id: "moon",
+          amount: 10,
+        },
+        skills: ["ouranoscopy",],
+        requires: ["lens"],
+      },
+    ],
+
+    type: ["ink"],
+
+    icon: "asimel.png",
+  },
+  {
+    id: "awakened_feather",
+    displayName: {
+      en: "Awakened Feather",
+      zh: "觉醒翎羽",
+    },
+    description: {
+      en: "Alive to every draught and spark.",
+      zh: "对每一丝气息与电火花都活力四射。",
+    },
+    principles: [
+      { id: "scale", amount: 1 },
+      { id: "sky", amount: 2 },
+],
+
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "sky",
+          amount: 5,
+        },
+        skills: [
+          "anbary_n_lapidary",
+          "furs_n_feathers",
+          "lockworks_n_clockworks",
+          "sacra_limiae",
+          "sights_n_sensations",
+          "stitching_n_binding",
+        ],
+      },
+    ],
+
+    type: ["material","remains"],
+
+    icon: "awakened_feather.png",
+  },
+  {
+    id: "beeswax_candle",
+    displayName: {
+      en: "Beeswax Candle",
+      zh: "蜂蜡蜡烛",
+    },
+    description: {
+      en: "Simple and bright. \n\n[Generates Memory: Sight.]",
+      zh: "朴素又明亮。\n\n[使用获得回忆：视觉。]",
+    },
+    principles: [{ id: "lantern", amount: 1 },],
+
+    methods: [
+      {
+        id: "method_1",
+        skills: [
+          "glaziery_n_lightsmithing",
+          "insects_n_nectars",
+          "pyroglyphics",
+          "transformations_n_liberations",
+        ],
+        requires: ["beeswax"],
+      },
+    ],
+
+    type: ["candle"],
+
+    icon: "beeswax_candle.png",
+  },
+  {
     id: "rubywise_ruin",
     displayName: {
       en: "Rubywise Ruin",

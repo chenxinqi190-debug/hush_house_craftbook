@@ -45,6 +45,15 @@ export const skills: Record<string, Skill> = {
     image: "/skills/desires_n_dissolutions.png",
     principles: ["grail", "moon"],
   },
+  furs_n_feathers: {
+    id: "furs_n_feathers",
+    displayName: {
+      en: "Furs & Feathers",
+      zh: "毛皮与羽翎",
+    },
+    image: "/skills/furs_n_feathers.png",
+    principles: ["sky", "scale"],
+  },
   glassblowing_n_vesselcrafting: {
     id: "glassblowing_n_vesselcrafting",
     displayName: {
@@ -62,6 +71,15 @@ export const skills: Record<string, Skill> = {
     },
     image: "/skills/glaziery_n_lightsmithing.png",
     principles: ["lantern", "sky"],
+  },
+  inks_of_revelation: {
+    id: "inks_of_revelation",
+    displayName: {
+      en: "Inks of Revelation",
+      zh: "启示之墨",
+    },
+    image: "/skills/inks_of_revelation.png",
+    principles: ["lantern", "moth"],
   },
   insects_n_nectars: {
     id: "insects_n_nectars",
@@ -99,6 +117,24 @@ export const skills: Record<string, Skill> = {
     image: "/skills/orchids_n_narcotics.png",
     principles: ["grail", "nectar"],
   },
+  ouranoscopy: {
+    id: "ouranoscopy",
+    displayName: {
+      en: "Ouranoscopy",
+      zh: "窥天术",
+    },
+    image: "/skills/ouranoscopy.png",
+    principles: ["sky", "moon"],
+  },
+  pearl_n_tide: {
+    id: "pearl_n_tide",
+    displayName: {
+      en: "Pearl & Tide",
+      zh: "珍珠与浪潮",
+    },
+    image: "/skills/pearl_n_tide.png",
+    principles: ["rose", "moon"],
+  },
   purifications_n_exaltations: {
     id: "purifications_n_exaltations",
     displayName: {
@@ -107,6 +143,15 @@ export const skills: Record<string, Skill> = {
     },
     image: "/skills/purifications_n_exaltations.png",
     principles: ["sky", "lantern"],
+  },
+  putrefactions_n_calcinations: {
+    id: "putrefactions_n_calcinations",
+    displayName: {
+      en: "Putrefactions & Calcinations",
+      zh: "腐化与煅烧",
+    },
+    image: "/skills/putrefactions_n_calcinations.png",
+    principles: ["winter", "moon"],
   },
   pyroglyphics: {
     id: "pyroglyphics",
@@ -117,6 +162,33 @@ export const skills: Record<string, Skill> = {
     image: "/skills/pyroglyphics.png",
     principles: ["forge", "lantern"],
   },
+  sea_stories: {
+    id: "sea_stories",
+    displayName: {
+      en: "Sea Stories",
+      zh: "大海的故事",
+    },
+    image: "/skills/sea_stories.png",
+    principles: ["moon", "grail"],
+  },
+  sacra_limiae: {
+    id: "sacra_limiae",
+    displayName: {
+      en: "Sacra Limiae",
+      zh: "利米亚典仪",
+    },
+    image: "/skills/sacra_limiae.png",
+    principles: ["moth", "sky"],
+  },
+  sights_n_sensations: {
+    id: "sights_n_sensations",
+    displayName: {
+      en: "Sights & Sensations",
+      zh: "景象与感知",
+    },
+    image: "/skills/sights_n_sensations.png",
+    principles: ["sky", "winter"],
+  },
   solutions_n_separations: {
     id: "solutions_n_separations",
     displayName: {
@@ -125,6 +197,15 @@ export const skills: Record<string, Skill> = {
     },
     image: "/skills/solutions_n_separations.png",
     principles: ["moth", "knock"],
+  },
+  stitching_n_binding: {
+    id: "stitching_n_binding",
+    displayName: {
+      en: "Stitching & Binding",
+      zh: "缝合与装订",
+    },
+    image: "/skills/stitching_n_binding.png",
+    principles: ["sky", "heart"],
   },
   surgeries_n_exsanguinations: {
     id: "surgeries_n_exsanguinations",

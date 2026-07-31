@@ -20,6 +20,7 @@ export type CraftableType =
   | "tool"
   | "material"
   | "beast"
+  | "remains"
   | "candle"
   | "fuel"
   | "contamination"
@@ -45,17 +46,18 @@ export interface Craftable {
 }
 
 export const CATEGORY_ORDER: CraftableType[] = [
-  "beverage_intoxicating",
-  "beverage_nonintoxicating",
+  "contamination",
   "encaustum_terminale",
   "ink",
+  "beverage_intoxicating",
+  "beverage_nonintoxicating",
   "pigment",
   "tool",
   "material",
   "beast",
+  "remains",
   "candle",
   "fuel",
-  "contamination",
   "other",
 ];
 
