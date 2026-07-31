@@ -1,7 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Craftable, TYPE_LABELS } from "@/types/crafting";
+import {
+  Craftable,
+  CraftableType,
+  CATEGORY_ORDER,
+} from "@/types/crafting";
 import SearchBar from "./SearchBar";
 import PrincipleFilter from "./PrincipleFilter";
 import CategorySection from "./CategorySection";
@@ -17,20 +21,6 @@ interface SidebarProps {
   onSelectPrinciple: (id: string | null) => void;
   language: Language;
 }
-
-const CATEGORY_ORDER = [
-  "beverage_intoxicating",
-  "beverage_nonintoxicating",
-  "encaustum_terminale",
-  "ink",
-  "pigment",
-  "tool",
-  "material",
-  "beast",
-  "candle",
-  "fuel",
-  "other",
-];
 
 export default function Sidebar({
   searchQuery,
@@ -108,7 +98,7 @@ export default function Sidebar({
           return (
             <CategorySection
               key={category}
-              label={TYPE_LABELS[category] ?? category}
+              label={t.types[category] ?? category}
               craftables={categoryCraftables}
               isOpen={
                 isFiltering

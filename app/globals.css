@@ -29,7 +29,7 @@ body {
 .bg-parchment {
 background-image: url('/textures/slight heavy.png');
 background-repeat: repeat;
-background-size: 2000px auto;
+background-size: 2400px auto;
 }
 .font-en {
   font-family: var(--font-philosopher), serif;

@@ -1,14 +1,12 @@
-import { craftables } from "./craftables";
-
 export type Language = "en" | "zh";
 
 export const translations = {
   en: {
     about: "About",
-    backToArchive: "Back to Cookbook",
+    backToArchive: "Back to Craftbook",
     archiveTitle: "Hush House Craftbook",
     search: "Search by name...",
-    start: "There are 92 craftables recorded in this Cookbook.\nWhat will grace the table today? Consult the categories on the left.",
+    start: "xxxxxxxx",
     principles: "Principles",
     requiredPrinciple: "Required Principle",
     skills: "Skills",
@@ -17,10 +15,19 @@ export const translations = {
     formula: "Formula",
     craftables: "Craftables",
     noRequires: "Ready to serve.",
-    categories: {
+    types: {
       beverage_intoxicating: "Beverage (Intoxicating)",
       beverage_nonintoxicating: "Beverage (Non-intoxicating)",
+      contamination: "Contamination",
+      encaustum_terminale: "Encaustum Terminale",
+      pigment: "Pigment",
       ink: "Ink",
+      tool: "Tool",
+    material: "Material",
+    beast: "Beast & Remains",
+    candle: "Candle",
+    fuel: "Fuel",
+    other: "Other",
     },
     openCraftable: "How to make this? ",
     closeCraftable: "↵ Fold",
@@ -41,10 +48,19 @@ export const translations = {
     formula: "配方",
     craftables: "可制作物品",
     noRequires: "直接上桌即可",
-    categories: {
+    types: {
       beverage_intoxicating: "烈酒",
       beverage_nonintoxicating: "无酒精饮料",
+      contamination: "处理污染书籍",
       ink: "墨水",
+      encaustum_terminale: "终刻墨",
+      pigment: "颜料",
+    tool: "工具",
+    material: "材料",
+    beast: "兽类与残骸",
+    candle: "蜡烛",
+    fuel: "燃料",
+    other: "其他",
     },
     openCraftable: "展开做法",
     closeCraftable: "↵ 收起",

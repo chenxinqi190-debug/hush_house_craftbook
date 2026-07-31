@@ -4,10 +4,26 @@ export interface CraftableAspect {
 }
 export interface CraftableMethod {
   id: string; // method_1, method_2...
-  principle: CraftableAspect;
-  skills: string[];
-  requires: string[];
+  principle?: {
+    id: string;
+    amount: number;
+  };
+  skills?: string[];
+  requires?: string[];
 }
+export type CraftableType =
+  | "beverage_intoxicating"
+  | "beverage_nonintoxicating"
+  | "encaustum_terminale"
+  | "ink"
+  | "pigment"
+  | "tool"
+  | "material"
+  | "beast"
+  | "candle"
+  | "fuel"
+  | "contamination"
+  | "other";
 export interface Craftable {
   id: string; // internal id, never displayed
   displayName: {
@@ -20,7 +36,7 @@ export interface Craftable {
   };
   principles: CraftableAspect[]; // the item's own aspects
   methods: CraftableMethod[]; // crafting routes
-  type: string[]; // sidebar/category use
+  type: CraftableType[]; // sidebar/category use
   icon: string;
   note?: {
     en: string[];
@@ -28,16 +44,27 @@ export interface Craftable {
   };
 }
 
-export const TYPE_LABELS: Record<string, string> = {
-  beverage_intoxicating: "Beverage - Intoxicating",
-  beverage_nonintoxicating: "Beverage - Nonintoxicating",
-  encaustum_terminale: "Ink - Encaustum Terminale",
-  ink: "Ink",
-  pigment: "Pigment",
-  tool: "Tool",
-  material: "Materials",
-  beast: "Beast & Remains",
-  candle: "Candle",
-  fuel: "Fuel",
-  other: "Others"
-};
+export const CATEGORY_ORDER: CraftableType[] = [
+  "beverage_intoxicating",
+  "beverage_nonintoxicating",
+  "encaustum_terminale",
+  "ink",
+  "pigment",
+  "tool",
+  "material",
+  "beast",
+  "candle",
+  "fuel",
+  "contamination",
+  "other",
+];
+
+export interface Method {
+  principle?: {
+    id: string;
+    amount: number;
+  };
+
+  skills?: string[];
+  requires?: string[];
+}

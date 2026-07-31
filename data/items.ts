@@ -26,6 +26,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/aglaophotis.png",
   },
+  beeswax: {
+    id: "beeswax",
+    displayName: {
+      en: "Beeswax", 
+      zh: "蜂蜜",
+    },
+    icon: "/icons/beeswax.png",
+  },
   bitterblack_salts: {
     id: "bitterblack_salts",
     displayName: {
@@ -74,6 +82,14 @@ export const items: Record<string, Item> = {
   },
     icon: "knife.png",
   },
+  ichor_vitreous: {
+    id: "ichor_vitreous",
+    displayName: {
+      en: "Ichor Vitreous",
+      zh: "玻璃灵液",
+    },
+    icon: "/icons/ichor_vitreous.png",
+  },
   iotic_essence: {
     id: "iotic_essence",
     displayName: {
@@ -81,22 +97,6 @@ export const items: Record<string, Item> = {
       zh: "赤化精华",
     },
     icon: "/icons/iotic_essence.png",
-  },
-  butter: {
-    id: "butter",
-    displayName: {
-      en: "Butter",
-      zh: "黄油",
-    },
-    icon: "butter.png",
-  },
-  cake_batter: {
-    id: "cake_batter",
-    displayName: {
-      en: "Cake Batter",
-      zh: "蛋糕面糊",
-    },
-    icon:"cake_batter.png"
   },
   cuckoo_honey: {
     id: "cuckoo_honey",
@@ -106,70 +106,6 @@ export const items: Record<string, Item> = {
     },
     icon:"cuckoo_honey.png"
   },
-  canned_ham: {
-    id: "canned_ham",
-    displayName: {
-      en: "Canned Ham",
-      zh: "火腿罐头",
-    },
-    icon:"canned_ham.png"
-  },
-  creamed_sugar: {
-    id: "creamed_sugar",
-    displayName: {
-      en: "Creamed Sugar",
-      zh: "打发黄油",
-    },
-    icon: "creamed_sugar.png",
-  },
-  crusty_bread: {
-    id: "crusty_bread",
-    displayName: {
-      en: "Crusty Bread",
-      zh: "硬皮面包",
-    },
-    icon: "crusty_bread.png",
-  },
-  ch_second_flush_assam_pot: {
-    id: "ch_second_flush_assam_pot",
-    displayName: {
-      en: "Second Flush Assam (Pot)",
-      zh: "C＆H公司夏摘阿萨姆茶（一壶）",
-    },
-    icon: "ch_second_flush_assam_pot.png",
-  },
-  dark_marrow: {
-    id: "dark_marrow",
-    displayName: {
-      en: "Dark Marrow", 
-      zh: "深色西葫芦",
-    },
-    icon: "dark_marrow.png",
-  },
-  dough: {
-    id: "dough",
-    displayName: {
-      en: "Dough",
-      zh: "生面团",
-    },
-    icon: "dough.png",
-  },
-  flour: {
-    id: "flour",
-    displayName: {
-      en: "Flour",
-      zh: "面粉",
-    },
-    icon: "flour.png",
-  },
-  dripping: {
-    id: "dripping",
-    displayName: {
-      en: "Dripping",
-      zh: "烤肉滴油",
-    },
-    icon: "dripping.png",
-  },
   fragrant_chalice: {
     id: "fragrant_chalice",
     displayName: {
@@ -177,22 +113,6 @@ export const items: Record<string, Item> = {
       zh: "香盏花",
     },
     icon: "fragrant_chalice.png",
-  },
-  golden_marrow: {
-    id: "golden_marrow",
-    displayName: {
-      en: "Golden Marrow", 
-      zh: "金西葫芦",
-    },
-    icon: "golden_marrow.png",
-  },
-  hens_egg: {
-    id: "hens_egg",
-    displayName: {
-      en: "Hen's Egg",
-      zh: "鸡蛋",
-    },
-    icon: "hens_egg.png",
   },
   honey: {
     id: "honey",
@@ -225,46 +145,6 @@ export const items: Record<string, Item> = {
       zh: "烈酒",
     },
     icon: "intoxicating.png",
-  },
-  kitchen_bowls: {
-    id: "kitchen_bowls",
-    displayName: {
-      en: "Kitchen Bowls",
-      zh: "厨房用碗",
-    },
-    icon: "kitchen_bowls.png",
-  },
-  mackerel: {
-    id: "mackerel",
-    displayName: {
-      en: "Mackerel",
-      zh: "鲭鱼",
-    },
-    icon: "mackerel.png",
-  },
-  marinated_beef_uncooked: {
-    id: "marinated_beef_uncooked",
-    displayName: {
-      en: "Marinated Beef (Uncooked)",
-      zh: "腌牛肉（未烹饪的）",
-    },
-    icon: "marinated_beef_uncooked.png",
-  },
-  marinated_onions: {
-    id: "marinated_onions",
-    displayName: {
-      en: "Marinated Onions",
-      zh: "腌洋葱",
-    },
-    icon: "marinated_onions.png",
-  },
-  meringue: {
-    id: "meringue",
-    displayName: {
-      en: "Meringue",
-      zh: "蛋白酥",
-    },
-    icon: "meringue.png",
   },
   mist_kissed_water: {
     id: "mist_kissed_water",

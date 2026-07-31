@@ -1,5 +1,124 @@
 import { Craftable } from "@/types/crafting";
+
 export const craftables: Craftable[] = [
+  {
+    id: "aglaophotis_scented_candle",
+    displayName: {
+      en: "Aglaophotis-Scented Candle",
+      zh: "阿格劳福提斯花薰烛",
+    },
+    description: {
+      en: "A candle scented with aglaophotis.\n\n[Generates Memory: Revelation.]",
+      zh: "一支带有阿格劳福提斯花香味的蜡烛。\n\n[使用获得回忆：启示。]",
+    },
+    principles: [
+      { id: "heart", amount: 2 },
+      { id: "knock", amount: 2 },
+      { id: "lantern", amount: 2 },
+      { id: "rose", amount: 2 },
+    ],
+
+    methods: [
+      {
+        id: "method_1",
+        skills: [
+          "glaziery_n_lightsmithing",
+          "insects_n_nectars",
+          "pyroglyphics",
+          "transformations_n_liberations",
+        ],
+        requires: ["beeswax","aglaophotis"],
+      },
+    ],
+
+    type: ["candle"],
+
+    icon: "aglaophotis_scented_candle.png",
+  },
+  {
+    id: "amethyst_ampoule",
+    displayName: {
+      en: "Amethyst Ampoule",
+      zh: "紫晶安瓿瓶",
+    },
+    description: {
+      en: "Were it released from the glass, it would be quite another colour.",
+      zh: "若是将内容物倒出玻璃瓶，它将呈现出截然不同的颜色。",
+    },
+    principles: [
+      { id: "heart", amount: 2 },
+      { id: "knock", amount: 2 },
+],
+
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "knock",
+          amount: 5,
+        },
+        skills: [
+          "glassblowing_n_vesselcrafting",
+          "lockworks_n_clockworks",
+          "solutions_n_separations",
+          "surgeries_n_exsanguinations",
+          "the_great_signs_n_the_great_scars",
+        ],
+      },
+    ],
+
+    type: ["other"],
+
+    icon: "amethyst_ampoule.png",
+  },
+  {
+    id: "ashartine",
+    displayName: {
+      en: "Ashartine",
+      zh: "阿夏廷",
+    },
+    description: {
+      en: "Lies written in Ashartine tend to fade or be misspelt. It's legible in the dark. An Ink of Revelation.",
+      zh: "用阿夏廷写下的谎言会褪色或错拼。它在黑暗中也清晰可辨。一种启示之墨。",
+    },
+    principles: [
+      { id: "forge", amount: 1 },
+      { id: "lantern", amount: 6 },
+      { id: "sky", amount: 2 },
+    ],
+
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "lantern",
+          amount: 15,
+        },
+        skills: [
+          "glassblowing_n_vesselcrafting",
+          "glaziery_n_lightsmithing",
+          "pyroglyphics",
+          "watchmans_paradoxes",
+        ],
+        requires: ["ichor_vitreous"],
+      },{
+        id: "method_2",
+        principle: {
+          id: "sky",
+          amount: 15,
+        },
+        skills: [
+          "anbary_n_lapidary",
+          "glassblowing_n_vesselcrafting",
+        ],
+        requires: ["ichor_vitreous"],
+      },
+    ],
+
+    type: ["ink"],
+
+    icon: "ashartine.png",
+  },
   {
     id: "rubywise_ruin",
     displayName: {
