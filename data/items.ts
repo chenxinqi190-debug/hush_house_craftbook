@@ -26,6 +26,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/aglaophotis.png",
   },
+  asimel: {
+    id: "asimel",
+    displayName: {
+      en: "Asimel", 
+      zh: "阿苏麦",
+    },
+    icon: "/icons/asimel.png",
+  },
   beeswax: {
     id: "beeswax",
     displayName: {
@@ -66,6 +74,22 @@ export const items: Record<string, Item> = {
     },
     icon:"/icons/cuckoo_honey.png"
   },
+  egg: {
+    id: "egg",
+    displayName: {
+      en: "Egg",
+      zh: "卵",
+    },
+    icon:"/icons/egg.png"
+  },
+    fabric: {
+    id: "fabric",
+    displayName: {
+      en: "Fabric",
+      zh: "织物与丝缕",
+    },
+    icon: "/icons/fabric.png",
+  },
   flower: {
     id: "flower",
     displayName: {
@@ -81,6 +105,22 @@ export const items: Record<string, Item> = {
       zh: "香盏花",
     },
     icon: "/icons/fragrant_chalice.png",
+  },
+  glass: {
+    id: "glass",
+    displayName: {
+      en: "Glass",
+      zh: "玻璃",
+    },
+    icon: "/icons/glass.png",
+  },
+  gervinite: {
+    id: "gervinite",
+    displayName: {
+      en: "Gervinite",
+      zh: "格维合金",
+    },
+    icon: "/icons/gervinite.png",
   },
   honey: {
     id: "honey",
@@ -122,6 +162,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/iotic_essence.png",
   },
+  leathy: {
+    id: "leathy",
+    displayName: {
+      en: "Leathy",
+      zh: "遗忘之水",
+    },
+    icon: "/icons/leathy.png",
+  },
   lens: {
     id: "lens",
     displayName: {
@@ -129,6 +177,14 @@ export const items: Record<string, Item> = {
       zh: "透镜",
     },
     icon: "/icons/lens.png",
+  },
+  light: {
+    id: "light",
+    displayName: {
+      en: "Light",
+      zh: "光源",
+    },
+    icon: "/icons/light.png",
   },
   liquid: {
     id: "liquid",
@@ -138,30 +194,22 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/liquid.png",
   },
-  knife:{
-    id: "knife",
+  metal: {
+    id: "metal",
     displayName: {
-      en: "Knife",
-      zh: "刀",
-  },
-    icon: "knife.png",
-  },
-  isle_water: {
-    id: "isle_water",
-    displayName: {
-      en: "Isle Water",
-      zh: "岛上井水",
+      en: "Metal", 
+      zh: "金属",
     },
-    icon: "isle_water.png",
+    icon: "/icons/metal.png",
   },
-  mist_kissed_water: {
-    id: "mist_kissed_water",
+  pale_mommet: {
+    id: "pale_mommet",
     displayName: {
-      en: "Mist-Kissed Water",
-      zh: "雾吻之水",
+      en: "Pale Mommet",
+      zh: "苍白人偶",
     },
-    icon: "mist_kissed_water.png",
-  },
+    icon: "/icons/pale_mommet.png",
+    },
   pyrus_auricalcinus: {
     id: "pyrus_auricalcinus",
     displayName: {
@@ -170,4 +218,27 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/pyrus_auricalcinus.png",
     },
+  wire_orichalcum: {
+    id: "wire_orichalcum",
+    displayName: {
+      en: "Wire (Orichalcum)",
+      zh: "金属丝（山铜）",
+    },
+    icon: "/icons/wire_orichalcum.png",
+    },
+  wire_silver: {
+    id: "wire_silver",
+    displayName: {
+      en: "Wire (Silver)",
+      zh: "金属丝（银）",
+    },
+    icon: "/icons/wire_silver.png",
+    },
+    xanthotic_essence: {
+    id: "xanthotic_essence",
+    displayName: {
+      en: "Xanthotic Essence",
+      zh: "黄化精华",
+    },
+    icon: "/icons/xanthotic_essence.png"},
 }

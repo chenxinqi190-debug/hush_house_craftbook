@@ -12,18 +12,17 @@ export interface CraftableMethod {
   requires?: string[];
 }
 export type CraftableType =
-  | "beverage_intoxicating"
-  | "beverage_nonintoxicating"
-  | "encaustum_terminale"
+  | "beverage_n_intoxication"
   | "ink"
   | "pigment"
   | "tool"
   | "material"
-  | "beast"
-  | "remains"
+  | "beast_n_remains"
   | "candle"
   | "fuel"
+  | "metal"
   | "contamination"
+  | "mark"
   | "other";
 export interface Craftable {
   id: string; // internal id, never displayed
@@ -46,18 +45,17 @@ export interface Craftable {
 }
 
 export const CATEGORY_ORDER: CraftableType[] = [
-  "contamination",
-  "encaustum_terminale",
+  "beverage_n_intoxication",
   "ink",
-  "beverage_intoxicating",
-  "beverage_nonintoxicating",
-  "pigment",
-  "tool",
-  "material",
-  "beast",
-  "remains",
+  "beast_n_remains",
+  "contamination",
   "candle",
+  "tool",
+  "pigment",
+  "material",
   "fuel",
+  "metal",
+  "mark",
   "other",
 ];
 
