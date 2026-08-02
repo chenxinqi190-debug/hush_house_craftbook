@@ -66,6 +66,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/bowl_of_sea_blest_pears.png",
   },
+  chimeric_larva: {
+    id: "chimeric_larva",
+    displayName: {
+      en: "Chimeric Larva",
+      zh: "混种幼虫",
+    },
+    icon: "/icons/chimeric_larva.png",
+  },
   cuckoo_honey: {
     id: "cuckoo_honey",
     displayName: {
@@ -81,6 +89,14 @@ export const items: Record<string, Item> = {
       zh: "卵",
     },
     icon:"/icons/egg.png"
+  },
+  essential_periost: {
+    id: "essential_periost",
+    displayName: {
+      en: "Essential Periost",
+      zh: "骨本精华",
+    },
+    icon:"/icons/essential_periost.png"
   },
     fabric: {
     id: "fabric",
@@ -106,13 +122,13 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/fragrant_chalice.png",
   },
-  glass: {
-    id: "glass",
+  frith_weft: {
+    id: "frith_weft",
     displayName: {
-      en: "Glass",
-      zh: "玻璃",
+      en: "Frith-Weft",
+      zh: "狭湾纬编",
     },
-    icon: "/icons/glass.png",
+    icon: "/icons/frith_weft.png",
   },
   gervinite: {
     id: "gervinite",
@@ -121,6 +137,30 @@ export const items: Record<string, Item> = {
       zh: "格维合金",
     },
     icon: "/icons/gervinite.png",
+  },
+  gideons_soaks: {
+    id: "gideons_soaks",
+    displayName: {
+      en: "Gideons Soaks",
+      zh: "基甸的浸液",
+    },
+    icon: "/icons/gideons_soaks.png",
+  },
+  glass: {
+    id: "glass",
+    displayName: {
+      en: "Glass",
+      zh: "玻璃",
+    },
+    icon: "/icons/glass.png",
+  },
+  glassfinger_toxin: {
+    id: "glassfinger_toxin",
+    displayName: {
+      en: "Glassfinger Toxin",
+      zh: "透指毒素",
+    },
+    icon: "/icons/glassfinger_toxin.png"
   },
   honey: {
     id: "honey",
@@ -137,6 +177,14 @@ export const items: Record<string, Item> = {
     zh: "蜜痂茉莉",
     },
     icon: "/icons/honeyscar_jasmine.png",
+  },
+  ichor_auroral: {
+    id: "ichor_auroral",
+    displayName: {
+      en: "Ichor Auroral",
+      zh: "曙光灵液",
+    },
+    icon: "/icons/ichor_auroral.png",
   },
   ichor_vitreous: {
     id: "ichor_vitreous",
@@ -162,6 +210,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/iotic_essence.png",
   },
+  leaf: {
+    id: "leaf",
+    displayName: {
+      en: "Leaf",
+      zh: "叶",
+    },
+    icon: "/icons/leaf.png",
+  },
   leathy: {
     id: "leathy",
     displayName: {
@@ -177,6 +233,14 @@ export const items: Record<string, Item> = {
       zh: "透镜",
     },
     icon: "/icons/lens.png",
+  },
+  lenten_rose: {
+    id: "lenten_rose",
+    displayName: {
+      en: "Lenten Rose",
+      zh: "四旬斋玫瑰",
+    },
+    icon: "/icons/lenten_rose.png",
   },
   light: {
     id: "light",
@@ -194,6 +258,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/liquid.png",
   },
+  living_relic: {
+    id: "living_relic",
+    displayName: {
+      en: "Living Relic",
+      zh: "活化石",
+    },
+    icon: "/icons/living_relic.png",
+  },
   metal: {
     id: "metal",
     displayName: {
@@ -201,6 +273,14 @@ export const items: Record<string, Item> = {
       zh: "金属",
     },
     icon: "/icons/metal.png",
+  },
+  moth_orchid: {
+    id: "moth_orchid",
+    displayName: {
+      en: "Moth Orchid",
+      zh: "蛾兰",
+    },
+    icon: "/icons/moth_orchid.png",
   },
   pale_mommet: {
     id: "pale_mommet",
@@ -210,6 +290,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/pale_mommet.png",
     },
+    perinculate: {
+    id: "perinculate",
+    displayName: {
+      en: "Perinculate",
+      zh: "凶匿墨",
+    },
+    icon: "/icons/perinculate.png",
+    },
   pyrus_auricalcinus: {
     id: "pyrus_auricalcinus",
     displayName: {
@@ -217,6 +305,38 @@ export const items: Record<string, Item> = {
       zh: "铜梨",
     },
     icon: "/icons/pyrus_auricalcinus.png",
+    },
+  rubywise_ruin: {
+    id: "rubywise_ruin",
+    displayName: {
+      en: "Rubywise Ruin",
+      zh: "沉沦赤慧",
+    },
+    icon: "/icons/rubywise_ruin.png",
+  },
+  silver_spintriae: {
+    id: "silver_spintriae",
+    displayName: {
+      en: "Silver Spintriae",
+      zh: "古银币",
+    },
+    icon: "/icons/silver_spintriae.png",
+    },
+  solomons_preparation: {
+    id: "solomons_preparation",
+    displayName: {
+      en: "Solomon's Preparation",
+      zh: "所罗门制剂",
+    },
+    icon: "/icons/solomons_preparation.png",
+    },
+    thunderskins_paean: {
+    id: "thunderskins_paean",
+    displayName: {
+      en: "Thunderskin's Paean",
+      zh: "轰雷之皮的赞歌",
+    },
+    icon: "/icons/thunderskins_paean.png",
     },
   wire_orichalcum: {
     id: "wire_orichalcum",
@@ -233,6 +353,14 @@ export const items: Record<string, Item> = {
       zh: "金属丝（银）",
     },
     icon: "/icons/wire_silver.png",
+    },
+    wood: {
+    id: "wood",
+    displayName: {
+      en: "Wood",
+      zh: "木材",
+    },
+    icon: "/icons/wood.png",
     },
     xanthotic_essence: {
     id: "xanthotic_essence",
