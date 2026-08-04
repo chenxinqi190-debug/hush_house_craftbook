@@ -29,7 +29,7 @@ export const translations = {
     metal: "Metal",
     other: "Other",
     },
-    openCraftable: "How to make this? ",
+    openCraftable: "How to make? ",
     closeCraftable: "↵ Fold",
     closeMenu: "Close",
     close: "Close"

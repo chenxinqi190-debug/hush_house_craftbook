@@ -28,7 +28,7 @@ export default function CategorySection({
         type="button"
         onClick={onToggle}
         aria-expanded={isOpen}
-        className="flex w-full items-center justify-between px-2 py-5 text-left"
+        className="flex w-full items-center justify-between px-2 py-3 text-left"
       >
         <span className="text-lg tracking-[0.15em] uppercase text-ink">
           {label}

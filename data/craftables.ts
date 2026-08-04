@@ -368,7 +368,7 @@ export const craftables: Craftable[] = [
       },
     ],
 
-    type: ["material","beast_n_remains"],
+    type: ["beast_n_remains"],
     icon: "awakened_feather.png",
   },
   {
@@ -1205,7 +1205,7 @@ export const craftables: Craftable[] = [
         skills: ["disciplines_of_the_hammer","meniscate_reflections","transformations_n_liberations"],
         requires: ["xanthotic_essence"],
       }],
-      type: ["pigment","fuel"],
+      type: ["pigment"],
       icon: "iotic_essence.png",
   },
   {
@@ -1270,7 +1270,7 @@ export const craftables: Craftable[] = [
           "ragged_crossroads",
           "sickle_n_eclipse",
         ]}],
-          type: ["material"],
+          type: ["other"],
           icon: "labhitic_tincture.png",
   },
   {
@@ -2002,8 +2002,8 @@ export const craftables: Craftable[] = [
       zh: "所罗门制剂",
     },
     description: {
-      en: "Solomon Husher would take this every night without fail before sleep, to close his ears to the sound of the waves. But on the 9th of January 1838, a heavy snow fell on Hush House. When the other residents dug themselves out, Husher was nowhere to be found. He had left a resignation letter, and an undrunk measure of his Preparation.\n\n[This is a non-intoxicating beverage.]",
-      zh: "所罗门·赫舍每夜入眠前都会喝下这种东西，以使得自己不再听见海潮之声，从无例外。但在1838年1月9日，一场大雪降临了噤声居屋。当其他住户把自己刨出来时，赫舍却无处可寻。他留下了一封辞呈，以及一整罐未曾饮用的这种制剂。\n\n[这是一种不含酒精的饮料。]",
+      en: "Solomon Husher would take this every night without fail before sleep, to close his ears to the sound of the waves. But on the 9th of January 1838, a heavy snow fell on Hush House. When the other residents dug themselves out, Husher was nowhere to be found. He had left a resignation letter, and an undrunk measure of his Preparation.\n\n* This is a non-intoxicating beverage.",
+      zh: "所罗门·赫舍每夜入眠前都会喝下这种东西，以使得自己不再听见海潮之声，从无例外。但在1838年1月9日，一场大雪降临了噤声居屋。当其他住户把自己刨出来时，赫舍却无处可寻。他留下了一封辞呈，以及一整罐未曾饮用的这种制剂。\n\n* 这是一种不含酒精的饮料。",
     },
     principles: [
       { id: "moon", amount: 1 },
@@ -2145,7 +2145,7 @@ export const craftables: Craftable[] = [
           amount: 5,
         },
         skills: ["watchmans_paradoxes"]}],
-    type: ["material"],
+    type: ["other"],
     icon: "tanglebrag.png",
   },
   {
@@ -2170,6 +2170,30 @@ export const craftables: Craftable[] = [
           "coil_n_chasm","herbs_n_infusions","orchids_n_narcotics","spices_n_savours","stone_stories"]}],
     type: ["beverage_n_intoxication"],
     icon: "thirzas_cordials.png",
+  },
+  {
+    id: "thunderskins_paean",
+    displayName: {
+      en: "Thunderskin's Paean",
+      zh: "轰雷之皮的赞歌",
+    },
+    description: {
+      en: "A song of joyous sacrifice.",
+      zh: "一首欢乐的祭歌。",
+    },
+    principles: [{ id: "grail", amount: 1 },{ id: "heart", amount: 4 },{ id: "scale", amount: 1 }],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "heart",
+          amount: 10,
+        },
+        skills: [
+          "drums_n_dances","strings_n_songs"],
+        requires: ["instrument"]}],
+    type: ["other"],
+    icon: "thunderskins_paean.png",
   },
   {
     id: "westcotts_compounds",
@@ -2199,7 +2223,7 @@ export const craftables: Craftable[] = [
         },
         skills: [
           "meniscate_reflections","pyroglyphics","spices_n_savours"]}],
-    type: ["material"],
+    type: ["other"],
     icon: "westcotts_compounds.png",
   },
   {
@@ -2235,7 +2259,7 @@ export const craftables: Craftable[] = [
           amount: 10,},
         skills: ["lockworks_n_clockworks"],
       requires:["metal"]}],
-    type: ["material","metal"],
+    type: ["metal"],
     icon: "wire_orichalcum.png",
   },
   {
@@ -2254,7 +2278,7 @@ export const craftables: Craftable[] = [
         id: "method_1",
         requires: [
           "silver_spintriae","silver_spintriae"]}],
-    type: ["material","metal"],
+    type: ["metal"],
     icon: "wire_silver.png",
   },
   {
@@ -2264,8 +2288,8 @@ export const craftables: Craftable[] = [
       zh: "巫魅药茶",
     },
     description: {
-      en: "'To mend a broken heart, to colour a pale soul.'\n\n[This is a non-intoxicating beverage.]",
-      zh: "“为残破的心灵修补，为黯淡的灵魂着色。”\n\n[这是一种不含酒精的饮料。]",
+      en: "'To mend a broken heart, to colour a pale soul.'\n\n* This is a non-intoxicating beverage.",
+      zh: "“为残破的心灵修补，为黯淡的灵魂着色。”\n\n* 这是一种不含酒精的饮料。",
     },
     principles: [{ id: "grail", amount: 2 },{ id: "heart", amount: 1 }],
     methods: [
@@ -2355,7 +2379,15 @@ export const craftables: Craftable[] = [
         skills: ["purifications_n_exaltations"],
         requires: [
           "bitterblack_salts",
-          "iotic_essence",
+        ]},
+      {
+        id: "method_4",
+        principle: {
+          id: "lantern",
+          amount: 15,
+        },
+        skills: ["purifications_n_exaltations"],
+        requires: ["iotic_essence",
         ]}],
     type: ["pigment"],
     icon: "xanthotic_essence.png",

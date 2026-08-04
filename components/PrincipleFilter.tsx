@@ -1,17 +1,17 @@
 const PRINCIPLES = [
-  "principle.edge",
-  "principle.forge",
-  "principle.grail",
-  "principle.heart",
-  "principle.knock",
-  "principle.lantern",
-  "principle.moon",
-  "principle.moth",
-  "principle.nectar",
-  "principle.rose",
-  "principle.scale",
-  "principle.sky",
-  "principle.winter",
+  "edge",
+  "forge",
+  "grail",
+  "heart",
+  "knock",
+  "lantern",
+  "moon",
+  "moth",
+  "nectar",
+  "rose",
+  "scale",
+  "sky",
+  "winter",
 ];
 
 interface PrincipleFilterProps {
@@ -44,7 +44,7 @@ export default function PrincipleFilter({
               }`}
             >
               <img
-                src={`/icons/principles/${principleId}.png`}
+                src={`/icons/principles/principle.${principleId}.png`}
                 alt={principleId}
                 className="max-h-7 max-w-7 object-contain"
               />

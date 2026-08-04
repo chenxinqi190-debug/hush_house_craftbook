@@ -7,6 +7,7 @@ export interface Item {
     zh: string;
   };
   icon: string;
+  craftableId?: string;
 }
 
 export const items: Record<string, Item> = {
@@ -33,6 +34,7 @@ export const items: Record<string, Item> = {
       zh: "阿苏麦",
     },
     icon: "/icons/asimel.png",
+    craftableId: "asimel"
   },
   beeswax: {
     id: "beeswax",
@@ -49,6 +51,7 @@ export const items: Record<string, Item> = {
       zh: "苦黑盐",
     },
     icon: "/icons/bitterblack_salts.png",
+    craftableId: "bitterblack_salts"
   },
     blue_crown: {
     id: "blue_crown",
@@ -73,6 +76,7 @@ export const items: Record<string, Item> = {
       zh: "混种幼虫",
     },
     icon: "/icons/chimeric_larva.png",
+    craftableId: "chimeric_larva"
   },
   cuckoo_honey: {
     id: "cuckoo_honey",
@@ -96,7 +100,8 @@ export const items: Record<string, Item> = {
       en: "Essential Periost",
       zh: "骨本精华",
     },
-    icon:"/icons/essential_periost.png"
+    icon:"/icons/essential_periost.png",
+    craftableId: "essential_periost"
   },
     fabric: {
     id: "fabric",
@@ -129,6 +134,7 @@ export const items: Record<string, Item> = {
       zh: "狭湾纬编",
     },
     icon: "/icons/frith_weft.png",
+    craftableId: "frith_weft"
   },
   gervinite: {
     id: "gervinite",
@@ -137,6 +143,7 @@ export const items: Record<string, Item> = {
       zh: "格维合金",
     },
     icon: "/icons/gervinite.png",
+    craftableId: "gervinite"
   },
   gideons_soaks: {
     id: "gideons_soaks",
@@ -145,6 +152,7 @@ export const items: Record<string, Item> = {
       zh: "基甸的浸液",
     },
     icon: "/icons/gideons_soaks.png",
+    craftableId: "gideons_soaks"
   },
   glass: {
     id: "glass",
@@ -160,7 +168,8 @@ export const items: Record<string, Item> = {
       en: "Glassfinger Toxin",
       zh: "透指毒素",
     },
-    icon: "/icons/glassfinger_toxin.png"
+    icon: "/icons/glassfinger_toxin.png",
+    craftableId:"glassfinger_toxin"
   },
   honey: {
     id: "honey",
@@ -185,6 +194,7 @@ export const items: Record<string, Item> = {
       zh: "曙光灵液",
     },
     icon: "/icons/ichor_auroral.png",
+    craftableId: "ichor_auroral"
   },
   ichor_vitreous: {
     id: "ichor_vitreous",
@@ -193,7 +203,16 @@ export const items: Record<string, Item> = {
       zh: "玻璃灵液",
     },
     icon: "/icons/ichor_vitreous.png",
+    craftableId: "ichor_vitreous"
   },
+  instrument: {
+    id: "instrument",
+    displayName: {
+      en: "Instrument",
+      zh: "乐器",
+    },
+    icon: "/icons/instrument.png",
+    },
   intoxicating: {
     id: "intoxicating",
     displayName: {
@@ -209,6 +228,7 @@ export const items: Record<string, Item> = {
       zh: "赤化精华",
     },
     icon: "/icons/iotic_essence.png",
+    craftableId: "iotic_essence"
   },
   leaf: {
     id: "leaf",
@@ -225,6 +245,7 @@ export const items: Record<string, Item> = {
       zh: "遗忘之水",
     },
     icon: "/icons/leathy.png",
+    craftableId: "leathy"
   },
   lens: {
     id: "lens",
@@ -265,6 +286,7 @@ export const items: Record<string, Item> = {
       zh: "活化石",
     },
     icon: "/icons/living_relic.png",
+    craftableId: "living_relic" 
   },
   metal: {
     id: "metal",
@@ -297,6 +319,7 @@ export const items: Record<string, Item> = {
       zh: "凶匿墨",
     },
     icon: "/icons/perinculate.png",
+    craftableId: "perinculate"
     },
   pyrus_auricalcinus: {
     id: "pyrus_auricalcinus",
@@ -305,6 +328,7 @@ export const items: Record<string, Item> = {
       zh: "铜梨",
     },
     icon: "/icons/pyrus_auricalcinus.png",
+    craftableId:"pyrus_auricalcinus"
     },
   rubywise_ruin: {
     id: "rubywise_ruin",
@@ -313,6 +337,7 @@ export const items: Record<string, Item> = {
       zh: "沉沦赤慧",
     },
     icon: "/icons/rubywise_ruin.png",
+    craftableId:"rubywise_ruin"
   },
   silver_spintriae: {
     id: "silver_spintriae",
@@ -329,6 +354,7 @@ export const items: Record<string, Item> = {
       zh: "所罗门制剂",
     },
     icon: "/icons/solomons_preparation.png",
+    craftableId: "solomons_preparation"
     },
     thunderskins_paean: {
     id: "thunderskins_paean",
@@ -337,6 +363,7 @@ export const items: Record<string, Item> = {
       zh: "轰雷之皮的赞歌",
     },
     icon: "/icons/thunderskins_paean.png",
+    craftableId: "thunderskins_paean"
     },
   wire_orichalcum: {
     id: "wire_orichalcum",
@@ -345,6 +372,7 @@ export const items: Record<string, Item> = {
       zh: "金属丝（山铜）",
     },
     icon: "/icons/wire_orichalcum.png",
+    craftableId: "wire_orichalcum"
     },
   wire_silver: {
     id: "wire_silver",
@@ -353,6 +381,7 @@ export const items: Record<string, Item> = {
       zh: "金属丝（银）",
     },
     icon: "/icons/wire_silver.png",
+    craftableId: "wire_silver"
     },
     wood: {
     id: "wood",
@@ -368,5 +397,7 @@ export const items: Record<string, Item> = {
       en: "Xanthotic Essence",
       zh: "黄化精华",
     },
-    icon: "/icons/xanthotic_essence.png"},
+    icon: "/icons/xanthotic_essence.png",
+    craftableId: "xanthotic_essence"},
+    
 }

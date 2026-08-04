@@ -16,10 +16,8 @@ export type CraftableType =
   | "ink"
   | "pigment"
   | "tool"
-  | "material"
   | "beast_n_remains"
   | "candle"
-  | "fuel"
   | "metal"
   | "contamination"
   | "mark"
@@ -49,11 +47,9 @@ export const CATEGORY_ORDER: CraftableType[] = [
   "ink",
   "beast_n_remains",
   "contamination",
-  "candle",
   "tool",
   "pigment",
-  "material",
-  "fuel",
+  "candle",
   "metal",
   "mark",
   "other",
