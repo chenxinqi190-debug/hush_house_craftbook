@@ -2454,5 +2454,183 @@ export const craftables: Craftable[] = [
         skills: ["putrefactions_n_calcinations"]}],
     type: ["ink"],
     icon: "yewgall_ink.png",
+  },
+  {
+    id: "corruption_keeperskin",
+    displayName: {
+      en: "Keeperskin",
+      zh: "秘肤",
+    },
+    description: {
+      en: "This book is blotched with keeperskin, a luminous fungus that grows in the Wood we see in sleep, and enters the world when a dreamer inhales its spores.\n\n[Keeperskin contamination can affect your Ereb and Chor, and spread to nearby objects. You can remove it with a skill that's effective against Corruptions, if you provide at least 7 Nectar.]",
+      zh: "这本书沾染了秘肤，一种生长在我们梦中所见的林地的发光真菌，当梦者吸入它们的孢子后，这种真菌就进入了我们的世界。\n\n[秘肤会侵蚀你的黯晦和脉律，还会蔓延到附近的物品上。如果提供至少7点蜜，你可以通过某种能够有效对抗腐坏的技艺来将之去除。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "nectar",
+          amount: 7,
+        },
+        skills: [
+          "herbs_n_infusions","maggephene_mysteries","sickle_n_eclipse","purifications_n_exaltations"]},],
+    type: ["contamination"],
+    icon: "corruption_keeperskin.png",
+  },
+  {
+    id: "corruption_winkwell",
+    displayName: {
+      en: "Winkwell",
+      zh: "闪渊",
+    },
+    description: {
+      en: "Sometimes when I turn this book to the right angle, I see an eye peering at me from its pages or covers. They close and fade when I leave them in the dark... but light will always bring them out eventually.\n\n[This can affect your Fet and Wist, and spread to nearby objects. You can remove it with a skill that's effective against Corruption, and at least 7 Moon.]",
+      zh: "当我将书摆放到正确的角度后，就仿佛能看见那书页与封面间凝视着我的眼睛。它们会在黑暗里闭阖……可光亮最终总会将它们唤醒。\n\n[这种腐坏会侵蚀你的灵躯和铭晓，并且向周围的物品滋生，如果提供至少7点月，你也许可以通过某种能有效对抗这一腐坏的技艺来将之去除。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "moon",
+          amount: 7,
+        },
+        skills: [
+          "maggephene_mysteries","sickle_n_eclipse","herbs_n_infusions","purifications_n_exaltations"]},],
+    type: ["contamination"],
+    icon: "corruption_winkwell.png",
+  },
+  {
+    id: "curse_fifth_eye_curse",
+    displayName: {
+      en: "Fifth Eye Curse",
+      zh: "第五目诅咒",
+    },
+    description: {
+      en: "Someone has unhelpfully placed a curse which may tear open the unwilling eye of the soul.\n\n[This contamination can affect your Fet and Phost. You can remove it with a skill that's effective against Curses, and at least 7 Heart.]",
+      zh: "有人恶意地施加了一个会强行撕开灵魂之眼的诅咒。\n\n[这种咒术会污损你的灵躯和灵识。如果提供至少7点心，你也可以通过某种能够有效的对抗这一诅咒的技艺来将之去除 。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "heart",
+          amount: 7,
+        },
+        skills: ["sacra_limiae","sacra_solis_invicti","tridesma_hiera"]},],
+    type: ["contamination"],
+    icon: "curse_fifth_eye_curse.png",
+  },
+  {
+    id: "curse_sthenic_taint",
+    displayName: {
+      en: "Sthenic Taint",
+      zh: "生猛污蚀",
+    },
+    description: {
+      en: "A poison? A curse? Probably both. Be careful handling this book.\n\n[This contamination can affect your Shapt and Health. You can remove it with a skill that's effective against Curses, and at least 7 Knock.]",
+      zh: "毒素？诅咒？也许二者兼有。要小心处理这本书。\n\n[这种咒术会污损你的辩闻和健康，如果提供至少7点启，你也可以通过某种能够有效的对抗这一诅咒的技艺来将之去除 。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "knock",
+          amount: 7,
+        },
+        skills: ["sacra_limiae","sacra_solis_invicti","tridesma_hiera"]},],
+    type: ["contamination"],
+    icon: "curse_sthenic_taint.png",
+  },
+  {
+    id: "infestation_bloodlines",
+    displayName: {
+      en: "Bloodlines",
+      zh: "血绦",
+    },
+    description: {
+      en: "If I open this book at the right page, I'll find words that slowly ooze blood. Over time, those words increase in number.\n\n[This Infestation can affect your Ereb and Chor, and spread to nearby objects. You can remove it with a skill that's effective against Infestations, and at least 7 Moth.]",
+      zh: "如果我把这本书翻到恰当的页码，我会发现缓慢渗血的文字，随着时间的推移，这些文字会越来越多。\n\n[这种寄生会侵染你的黯晦与脉律，并且向周围的物品繁殖。如果提供至少7点蛾，你也可以通过某种能够有效的对抗这一寄生的技艺来将之去除。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "moth",
+          amount: 7,
+        },
+        skills: ["resurgences_n_emergences","hill_n_hollow","stitching_n_binding","stone_stories","surgeries_n_exsanguinations"]},],
+    type: ["contamination"],
+    icon: "infestation_bloodlines.png",
+  },
+  {
+    id: "infestation_witchworms",
+    displayName: {
+      en: "Witchworms",
+      zh: "巫蠹",
+    },
+    description: {
+      en: "Tiny larvae with half-human faces. Fortunately, they rarely develop into their imago stage; but even as larvae, their whispering can torment senses and distort thoughts.\n\n[These can affect your Shapt and Wist, and spread to nearby objects. You can remove them with a skill that's effective against Infestations, and at least 7 Winter.]",
+      zh: "长着半人脸的小幼虫。幸运的是，它们鲜能发育为成虫；但即使是幼虫，它们的窃窃私语也能折磨感官，扭曲思想。\n\n[这种寄生会侵染你的辩闻和铭晓，并且向周围的物品滋生，如果提供至少7点冬，你也可以通过某种能够有效的对抗这一寄生的技艺来将之去除。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "winter",
+          amount: 7,
+        },
+        skills: ["hill_n_hollow","resurgences_n_emergences","stitching_n_binding","stone_stories","surgeries_n_exsanguinations"]},],
+    type: ["contamination"],
+    icon: "infestation_witchworms.png",
+  },
+  {
+    id: "theoplasmic_actinic_theoplasma",
+    displayName: {
+      en: "Actinic Theoplasma",
+      zh: "神辉流溢",
+    },
+    description: {
+      en: "This book has suffered the attention of one of the bright Names or Hours, the gods-from-Light.\n\n [This contamination can affect your Phost and Trist, and spread to nearby objects. You can remove it with a skill that's effective against Theoplasmic Contamination, if you provide at least 7 Forge.]",
+      zh: "这本书遭受了某位明亮夺目的具名者，或光源神的关注。\n\n[这种神性流溢会毒害你的灵识与悲恸，还会蔓延到附近的物品上，如果提供至少7点铸，你也可以通过某种能够有效的对抗这一浸染的技艺来将之去除。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "forge",
+          amount: 7,
+        },
+        skills: ["meniscate_reflections","quenchings_n_quellings","inks_of_containment"]},],
+    type: ["contamination"],
+    icon: "theoplasmic_actinic_theoplasma.png",
+  },
+  {
+    id: "theoplasmic_chionic_theoplasma",
+    displayName: {
+      en: "Chionic Theoplasma",
+      zh: "神寒流溢",
+    },
+    description: {
+      en: "This book suffered the attention of one of the chilly Names or Hours, perhaps even a god-from-Nowhere.\n\n[This contamination can affect your Trist and Health, and spread to nearby objects. You can remove it with a skill that's effective against Theoplasmic Contamination, and at least 7 Heart.]",
+      zh: "这本书遭受了某位冰寒刺骨的具名者，甚至是虚源神的关注。\n\n[这种神性流溢会毒害你的悲恸和健康，还会蔓延到附近的物品上，如果提供至少7点心，你也可以通过某种能够有效的对抗这一浸染的技艺来将之去除。]",
+    },
+    principles:[],
+    methods: [
+      {
+        id: "method_1",
+        principle: {
+          id: "heart",
+          amount: 7,
+        },
+        skills: ["quenchings_n_quellings","meniscate_reflections","inks_of_containment"]},],
+    type: ["contamination"],
+    icon: "theoplasmic_chionic_theoplasma.png",
   }
 ]

@@ -41,6 +41,7 @@ const previewCraftable = previewCraftableId
   setPreviewCraftableId(null);
 }, [craftable.id]);
 const romanNumerals = ["I", "II", "III", "IV", "V"];
+const craftablePrinciples = craftable.principles ?? [];
    return (
     <article className="w-full max-w-[1700] px-8 pt-6 pb-14 md:ml-20">
       {/* Category */}
@@ -75,9 +76,9 @@ const romanNumerals = ["I", "II", "III", "IV", "V"];
           {t.principles}
         </h3>
 
-        {craftable.principles.length > 0 ? (
+        {craftablePrinciples.length > 0 ? (
           <div className="mt-2 flex flex-wrap gap-3">
-            {[...craftable.principles]
+            {[...craftablePrinciples]
               .sort((a, b) => a.id.localeCompare(b.id))
               .map((principle) => (
                 <div
@@ -99,13 +100,13 @@ const romanNumerals = ["I", "II", "III", "IV", "V"];
               ))}
           </div>
         ) : (
-          <p className="mt-2 text-sm italic text-ink/40">None.</p>
+          <p className="mt-2 text-sm italic text-ink/40">{t.none}</p>
         )}
       </section>
 
       {/* Methods */}
-      <div className="mt-12 flex items-start gap-10">
-<section className="w-[800px] min-w-0 shrink-0">
+      <div className="relative mt-12 md:flex md:items-start md:gap-10">
+<section className="w-full min-w-0 md:w-[800px] md:shrink-0">
 {craftable.methods.map((method, index) => (
     <FormulaSection
       key={method.id}
@@ -121,7 +122,32 @@ const romanNumerals = ["I", "II", "III", "IV", "V"];
   ))}
 </section>
 {previewCraftable && (
-    <aside className="sticky top-6 w-[440px] shrink-0 border-l border-ink/10 pl-6">
+    <>
+    <button
+      type="button"
+      aria-label="Close preview"
+      onClick={() => setPreviewCraftableId(null)}
+      className="fixed inset-0 z-40 bg-black/20 md:hidden"
+    />
+    <aside className={`fixed inset-x-0 bottom-0 z-50
+      max-h-[78vh] overflow-y-auto
+      border-t border-ink/20 bg-parchment
+      px-5 pt-5 pb-8 shadow-xl
+      transition-transform duration-300 ease-out
+
+      md:sticky md:top-6 md:left-auto md:right-auto md:bottom-auto
+    md:z-auto md:ml-8 md:max-h-none md:w-[420px]
+    md:shrink-0 md:overflow-visible
+    md:border-l md:border-t-0
+    md:bg-none md:bg-transparent md:pl-6 md:pr-0 md:pt-0 md:pb-0
+    md:shadow-none md:transition-none md:translate-y-0
+
+    ${
+      previewCraftable
+        ? "translate-y-0"
+        : "translate-y-full pointer-events-none"
+    }
+  `}>
       <div className="flex items-start justify-between gap-4">
         <h2 className="text-2xl text-ink">
           {previewCraftable.displayName[language]}
@@ -148,6 +174,7 @@ const romanNumerals = ["I", "II", "III", "IV", "V"];
         ))}
       </section>
     </aside>
+    </>
   )}
 </div>
 

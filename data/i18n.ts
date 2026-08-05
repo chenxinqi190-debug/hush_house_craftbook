@@ -14,10 +14,9 @@ export const translations = {
     requires: "Requires",
     formula: "Formula",
     craftables: "Craftables",
-    noRequires: "Ready to serve.",
     types: {
       beverage_n_intoxication: "Beverage & Intoxication",
-      contamination: "Contamination",
+      contamination: "Contamination Removal",
       pigment: "Pigment",
       ink: "Ink",
       tool: "Tool",
@@ -29,28 +28,28 @@ export const translations = {
     metal: "Metal",
     other: "Other",
     },
-    openCraftable: "How to make? ",
+    openCraftable: "How to make?",
     closeCraftable: "↵ Fold",
     closeMenu: "Close",
-    close: "Close"
+    close: "Close",
+    none: "None"
   },
   zh: {
     about: "关于",
     backToArchive: "返回菜谱",
-    archiveTitle: "噤声居屋菜谱",
-    search: "搜索菜谱……",
-    start: "噤声居屋中有近百道菜谱可供烹制。请查阅左栏目录。",
+    archiveTitle: "噤声居屋制作手册",
+    search: "搜索可制作物品……",
+    start: "xxxxxx",
     principles: "准则",
     requiredPrinciple: "目标准则",
     skills: "技能",
-    filterTip: "搜索菜名或按准则筛选。",
+    filterTip: "搜索物品名或按准则筛选。",
     requires: "材料",
     formula: "配方",
     craftables: "可制作物品",
-    noRequires: "直接上桌即可",
     types: {
       beverage_n_intoxication: "饮料与烈酒",
-      contamination: "处理污染书籍",
+      contamination: "处理书籍污染",
       ink: "墨水",
       encaustum_terminale: "终刻墨",
       pigment: "颜料",
@@ -66,6 +65,7 @@ export const translations = {
     openCraftable: "展开做法",
     closeCraftable: "↵ 收起",
     closeMenu: "收起菜单",
-    close: "收起"
+    close: "收起",
+    none: "无"
   },
 };

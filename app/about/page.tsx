@@ -8,14 +8,14 @@ export default function AboutPage() {
         href="/"
         className="mb-8 inline-flex items-center text-base text-ink/60 transition-colors hover:text-ink"
       >
-        ← Return to the Cookbook
+        ← Return to the Craftbook
       </Link>
       <h1 className="mb-8 text-4xl">About</h1>
 
       <section className="mb-10">
         <h2 className="mb-3 text-xl font-semibold">Project</h2>
         <p>
-          Hush House Cookbook is an unofficial fan-made recipe archive for
+          Hush House Craftbook is an unofficial fan-made recipe archive for
           Book of Hours and its DLC "House of Light".
         </p>
       </section>
@@ -32,7 +32,7 @@ export default function AboutPage() {
         <h2 className="mb-3 text-xl font-semibold">Credits</h2>
 
         <ul className="space-y-2">
-          <li><Craftable></Craftable> data: from the game.</li>
+          <li>Data: from the game.</li>
           <li>Additional verification:</li>
           <li>Book of Hours Wiki (en): https://book-of-hours.fandom.com/wiki/</li>
           <li>Book of Hours Wiki (zh): https://boh.huijiwiki.com/wiki</li>

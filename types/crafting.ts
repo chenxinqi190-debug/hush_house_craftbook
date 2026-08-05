@@ -32,7 +32,7 @@ export interface Craftable {
     en: string;
     zh: string;
   };
-  principles: CraftableAspect[]; // the item's own aspects
+  principles?: CraftableAspect[]; // the item's own aspects
   methods: CraftableMethod[]; // crafting routes
   type: CraftableType[]; // sidebar/category use
   icon: string;
@@ -43,10 +43,10 @@ export interface Craftable {
 }
 
 export const CATEGORY_ORDER: CraftableType[] = [
+  "contamination",
   "beverage_n_intoxication",
   "ink",
   "beast_n_remains",
-  "contamination",
   "tool",
   "pigment",
   "candle",
