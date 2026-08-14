@@ -84,7 +84,7 @@ export const craftables: Craftable[] = [
     },
     principles: [
       { id: "edge", amount: 7 },
-      { id: "sky", amount: 7 },
+      { id: "scale", amount: 7 },
       { id: "winter", amount: 7 }],
       methods: [
       {
@@ -754,7 +754,7 @@ export const craftables: Craftable[] = [
         skills: ["glassblowing_n_vesselcrafting",
           "glaziery_n_lightsmithing"]}],
     type: ["tool"],
-    icon: "dearday_lens",
+    icon: "dearday_lens.png",
   },
   {
     id: "eigengrau",
@@ -1112,7 +1112,7 @@ export const craftables: Craftable[] = [
           id: "rose",
           amount: 10,
         },
-        skills: ["auroral_contemplations","sand_stories"],
+        skills: ["auroral_contemplations","inks_of_power","sand_stories"],
         requires: ["light"],
       },
       {
@@ -1302,7 +1302,8 @@ export const craftables: Craftable[] = [
           "insects_n_nectars",
           "orchids_n_narcotics",
           "rites_of_the_roots",
-        ]},
+        ],
+      requires:["beverage"]},
         {
         id: "method_2",
         principle: {
@@ -1310,7 +1311,8 @@ export const craftables: Craftable[] = [
           amount: 10,
         },
         skills: [
-          "inks_of_containment",]}],
+          "inks_of_containment",],
+        requires:["beverage"]}],
           type: ["beverage_n_intoxication"],
           icon: "leathy.png",
   },
@@ -1480,7 +1482,7 @@ export const craftables: Craftable[] = [
         skills: [
           "pentiments_n_precursors",
           "resurgences_n_emergences",
-        "sea_stories","the_great_signs_n_the_great_scars"],
+        "sea_stories","the_great_signs_n_the_great_scars","tridesma_hiera"],
         requires: ["fabric"],
       },
     ],
@@ -2411,7 +2413,7 @@ export const craftables: Craftable[] = [
           amount: 15,
         },
         skills: [
-          "putrefactions_n_calcinations","ragged_crossroads","rhymes_n_rememberances","insects_n_nectars","snow_stories"],
+          "putrefactions_n_calcinations","ragged_crossroads","rhymes_n_rememberances","snow_stories"],
         requires:["essential_periost"]},
         {
         id: "method_2",

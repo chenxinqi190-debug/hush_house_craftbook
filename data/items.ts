@@ -44,6 +44,14 @@ export const items: Record<string, Item> = {
     },
     icon: "/icons/beeswax.png",
   },
+  beverage: {
+    id: "beverage",
+    displayName: {
+      en: "Beverage", 
+      zh: "饮料",
+    },
+    icon: "/icons/beverage.png",
+  },
   bitterblack_salts: {
     id: "bitterblack_salts",
     displayName: {
@@ -311,6 +319,7 @@ export const items: Record<string, Item> = {
       zh: "苍白人偶",
     },
     icon: "/icons/pale_mommet.png",
+    craftableId: "pale_mommet"
     },
     perinculate: {
     id: "perinculate",

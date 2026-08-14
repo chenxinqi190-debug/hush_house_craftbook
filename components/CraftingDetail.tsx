@@ -130,7 +130,7 @@ const craftablePrinciples = craftable.principles ?? [];
       className="fixed inset-0 z-40 bg-black/20 md:hidden"
     />
     <aside className={`fixed inset-x-0 bottom-0 z-50
-      max-h-[78vh] overflow-y-auto
+      max-h-[78vh] overflow-y-auto overflow-x-hidden
       border-t border-ink/20 bg-parchment
       px-5 pt-5 pb-8 shadow-xl
       transition-transform duration-300 ease-out
