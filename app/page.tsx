@@ -78,9 +78,9 @@ useEffect(() => {
       .includes(searchQuery.toLowerCase());
       const matchesPrinciple = 
       !selectedPrincipleId ||
-      craftable.principles.some(
-        (p) => p.id === selectedPrincipleId
-      );
+      (craftable.principles ?? []).some(
+    (p) => p.id === selectedPrincipleId
+  );
       return matchesSearch && matchesPrinciple;
     });
   }, [craftables, searchQuery, selectedPrincipleId, language]);
