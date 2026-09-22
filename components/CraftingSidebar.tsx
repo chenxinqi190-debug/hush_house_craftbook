@@ -66,10 +66,21 @@ export default function Sidebar({
 
   return (
     <div className="flex h-full flex-col">
-      <div className="px-4 pt-6 pb-4 md:pt-10 md:pb-20">
+      <div className="px-4 pt-6 pb-4 md:pt-8 md:pb-8">
         <h1 className="text-4xl tracking-[0.1em] text-ink md:text-5xl">
           {t.archiveTitle}
         </h1>
+        <p className="mt-6 text-base text-ink/80">
+    {language === "en" ? "Part of the " : "属于"}
+    <a
+      href={`https://hush-house-handbook.pages.dev/?lang=${language}`}
+      className="underline underline-offset-2 transition-colors hover:text-ink"
+    >
+      {language === "en"
+        ? "LIBRARIAN'S HANDBOOK"
+        : "图书管理员手册"}
+    </a>
+  </p>
       </div>
 
       <SearchBar

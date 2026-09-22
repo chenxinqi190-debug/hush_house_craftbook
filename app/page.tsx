@@ -7,7 +7,6 @@ import CraftingSidebar from "@/components/CraftingSidebar";
 import MobileDrawer from "@/components/MobileDrawer";
 import CraftingDetail from "@/components/CraftingDetail";
 import { Language, translations } from "@/data/i18n";
-import Link from "next/link";
 
 export default function Home() {
   // In this iteration the data source is the mock array. Later this can be
@@ -26,20 +25,33 @@ export default function Home() {
   useEffect(() => {
   setIsMounted(true);
 
+  const params = new URLSearchParams(window.location.search);
+  const urlLanguage = params.get("lang");
+
   const savedLanguage = localStorage.getItem("language") as Language | null;
   const savedCraftableId = localStorage.getItem("selectedCraftableId");
   const savedSearchQuery = localStorage.getItem("searchQuery");
   const savedPrincipleId = localStorage.getItem("selectedPrincipleId");
 
-  if (savedLanguage === "en" || savedLanguage === "zh") setLanguage(savedLanguage);
+  if (urlLanguage === "en" || urlLanguage === "zh") {
+    setLanguage(urlLanguage);
+  } else if (savedLanguage === "en" || savedLanguage === "zh") {
+    setLanguage(savedLanguage);
+  }
+
   if (savedCraftableId) setSelectedCraftableId(savedCraftableId);
   if (savedSearchQuery) setSearchQuery(savedSearchQuery);
   if (savedPrincipleId) setSelectedPrincipleId(savedPrincipleId);
 }, []);
 
   useEffect(() => {
-     if (!isMounted) return;
+  if (!isMounted) return;
+
   localStorage.setItem("language", language);
+
+  const url = new URL(window.location.href);
+  url.searchParams.set("lang", language);
+  window.history.replaceState({}, "", url);
 }, [language, isMounted]);
 
   useEffect(() => {
@@ -114,7 +126,7 @@ if (!isMounted) {
   } bg-parchment flex h-screen overflow-hidden text-ink`}
 >
       {/* Desktop sidebar */}
-      <aside className="hidden md:block md:w-[400px] md:flex-shrink-0 border-r border-ink/10">
+      <aside className="hidden md:block md:w-[380px] md:flex-shrink-0 border-r border-ink/10">
         <CraftingSidebar {...sidebarProps} />
       </aside>
 
@@ -135,18 +147,11 @@ if (!isMounted) {
             ☰ {t.craftables}
           </button>
           <span className="text-sm text-ink/70">
-            {selectedCraftable ? selectedCraftable.displayName[language] : "Hush House Cookbook"}
+            {selectedCraftable ? selectedCraftable.displayName[language] : "Hush House Craftbook"}
           </span>
         </div>
         <div className="flex items-center justify-end gap-3 px-8 pt-4">
   <LanguageSwitcher language={language} onChange={setLanguage} />
-
-  <Link
-    href="/about"
-    className="text-lg text-in/80 transition-colors hover:text-ink"
-  >
-    {t.about}
-  </Link>
 </div>
 
         <CraftingDetail craftable={selectedCraftable} craftables={craftables} language={language} />

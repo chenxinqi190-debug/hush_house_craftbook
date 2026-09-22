@@ -4,7 +4,7 @@ import {Craftable, CraftableType,CATEGORY_ORDER,} from "@/types/crafting";
 import { items } from "@/data/items";
 import { skills } from "@/data/skills";
 import { Language, translations } from "@/data/i18n";
-import {useEffect, useState } from "react";
+import {useEffect, useRef, useState } from "react";
 import FormulaSection from "@/components/FormulaSection"
 
 interface CraftingDetailProps {
@@ -32,6 +32,8 @@ export default function CraftingDetail({
   const [previewCraftableId, setPreviewCraftableId] =
   useState<string | null>(null);
 
+  const previewRef = useRef<HTMLElement | null>(null);
+
 const previewCraftable = previewCraftableId
   ? craftables.find(
       (craftable) => craftable.id === previewCraftableId
@@ -40,7 +42,18 @@ const previewCraftable = previewCraftableId
   useEffect(() => {
   setPreviewCraftableId(null);
 }, [craftable.id]);
-const romanNumerals = ["I", "II", "III", "IV", "V"];
+
+useEffect(() => {
+  if (!previewCraftableId || !previewRef.current) return;
+
+  requestAnimationFrame(() => {
+    previewRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    });
+  });
+}, [previewCraftableId]);
+
 const craftablePrinciples = craftable.principles ?? [];
    return (
     <article className="w-full max-w-[1700] px-8 pt-6 pb-14 md:ml-20">
@@ -112,6 +125,7 @@ const craftablePrinciples = craftable.principles ?? [];
       key={method.id}
       method={method}
       index={index}
+      methodCount={craftable.methods.length}
       language={language}
        onOpenPreview={(craftableId) => {
   setPreviewCraftableId((current) =>
@@ -129,7 +143,9 @@ const craftablePrinciples = craftable.principles ?? [];
       onClick={() => setPreviewCraftableId(null)}
       className="fixed inset-0 z-40 bg-black/20 md:hidden"
     />
-    <aside className={`fixed inset-x-0 bottom-0 z-50
+    <aside
+    ref={previewRef}
+    className={`fixed inset-x-0 bottom-0 z-50
       max-h-[78vh] overflow-y-auto overflow-x-hidden
       border-t border-ink/20 bg-parchment
       px-5 pt-5 pb-8 shadow-xl
@@ -168,6 +184,7 @@ const craftablePrinciples = craftable.principles ?? [];
             key={method.id}
             method={method}
             index={index}
+            methodCount={previewCraftable.methods.length}
             language={language}
             compact
           />

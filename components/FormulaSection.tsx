@@ -6,6 +6,7 @@ import { Language, translations } from "@/data/i18n";
 interface FormulaSectionProps {
   method: CraftableMethod;
   index: number;
+  methodCount: number;
   language: Language;
   compact?: boolean;
   previewCraftableId?: string | null;
@@ -17,6 +18,7 @@ const romanNumerals = ["I", "II", "III", "IV", "V"];
 export default function FormulaSection({
   method,
   index,
+  methodCount,
   language,
   compact = false,
   previewCraftableId,
@@ -71,7 +73,7 @@ export default function FormulaSection({
       <h3 className={compact
       ? "text-lg uppercase tracking-[0.16em] text-ink/70"
       : "text-2xl uppercase tracking-[0.2em] text-ink/80"}>
-        {t.formula} {romanNumerals[index]}
+        {t.formula} {methodCount > 1 ? ` ${romanNumerals[index]}` : ""}
       </h3>
 
       <div className={compact
